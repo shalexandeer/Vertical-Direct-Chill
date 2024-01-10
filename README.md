@@ -18,7 +18,8 @@ cp .env.example .env
 
 # open xampp or mysql workbench
 1. create database
-2. fill the connection needed, makse sure the connection to database is success
+2. fill the configuration such as host, database name, port, and etc in the .env
+3. make sure the connection to database is success
 
 # Generate application key
 php artisan key:generate
