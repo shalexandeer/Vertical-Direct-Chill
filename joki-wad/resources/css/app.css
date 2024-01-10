@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#main{
+  width:100%;
+  position: relative;
+}
+
+#thermometer{
+  width: 70px;
+  margin: 5% auto;
+}
+
+#stem{
+  width: 20px;
+  height: 215px;
+  position: relative;
+  left: 21px;
+  z-index: 1;
+  border-radius: 50px 50px 0 0;
+  border-left: 4px solid black;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  /* animation-name: stem; */
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+#marks{
+  width: 20px;
+  height: 90px;
+  position: relative;
+  bottom: 180px;
+  left: 36px;
+  z-index: 40;
+}
+
+#merc-stem{
+  width: 20px;
+  height: 85px;
+  position: relative;
+  bottom: 175px;
+  left: 25px;
+}
+#mercury{
+  width: 12px;
+  /* height: 190px; */
+  position: relative;
+  z-index: 20;
+  background-color: #dd2c00;
+  /* animation-name: mercury; */
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+#bulb{
+  position: relative;
+/*   overflow: hidden; */
+  bottom: 190px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  background-color: #dd2c00;
+  border-radius: 50px;
+  border: 4px solid black;
+  /* animation-name: bulb; */
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+h1{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3em;
+  color: white;
+}
+
+@media only screen and (max-width: 600px){
+  #main{
+    height: 600px;
+    overflow: hidden;
+  }
+}
+    @keyframes bulb {
+      from {
+        background-color: #dd2c00
+      }
+      to {
+        background-color: #b71c1c
+      }
+    }
+
+    @keyframes mercury {
+      from {
+        background-color: #dd2c00;
+        height: 190px;
+        bottom: 100%;
+      }
+      to {
+        background-color: #b71c1c;
+        height: 25px;
+        bottom: -80%;
+      }
+    }

@@ -36,4 +36,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/logout', [loginController::class, 'logout'])->name('logout');
 });
 
-
+// route to sneat
+Route::get('/sneat', function () {
+    return view('sneat');
+});
