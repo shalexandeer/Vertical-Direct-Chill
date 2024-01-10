@@ -30,6 +30,15 @@ php artisan key:generate
 # Run migrations
 php artisan migrate
 
+# Run seeders
+php artisan db:seed
+
+#install npm
+npm install
+
 # Start the development server
 php artisan serve
+
+# Start vite bundling
+npm run dev
 ```
