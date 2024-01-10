@@ -1,12 +1,4 @@
-Creating a well-structured and informative README for your Laravel projects is a great way to help others understand and contribute to your project. Here's a template that you can use as a starting point:
-
-Project Name
-A brief description of your project.
-
-Table of Contents
-Project Overview
-Installation
-
+Vertical Direct Chill
 
 Installation
 Explain how to set up and install your Laravel project locally. Include any dependencies or prerequisites that users need to install. You can use code blocks to provide command-line instructions.
