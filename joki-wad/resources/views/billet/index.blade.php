@@ -42,9 +42,9 @@
           </tr>
         </thead>
         <tbody>
-            @php
-             $totalTimeRemaining = 0;
-            @endphp
+          @php
+            $totalTimeRemaining = 0;
+          @endphp
 
           @forelse ($billets as $billet)
             @php
@@ -55,7 +55,7 @@
               $currentDateTime = \Carbon\Carbon::parse($currentTime);
 
               $timeRemaining = $currentDateTime->diff($targetDateTime);
-              
+
               //   if current time is passed the target time, then set time remaining to 0
               if ($currentDateTime->gt($targetDateTime)) {
                   // set time remaining to 0 string
@@ -124,7 +124,7 @@
           bookSST: true,
           type: 'base64'
         }) :
-        XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
+        XLSX.writeFile(wb, fn || ('Laporan Produksi Billet.' + (type || 'xlsx')));
     }
   </script>
 @endsection
